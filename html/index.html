@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QLSP</title>
+</head>
+<body>
+<center>
+    <h1>Nhập vào đê :)))</h1>
+    <textarea cols="50" rows="20" id="inp" onkeyup="typing()"></textarea>
+</center>
+<script>
+    let str = 'Tôi dất bờ dồ!';
+    let txtArea = document.getElementById('inp');
+    let inDex = 0;
+    let res = ''
+    function typing() {
+        res += str[inDex];
+        inDex++;
+        if (inDex>str.length) {
+            res = '';
+            inDex = 0;
+        }
+        txtArea.value = res;
+    }
+</script>
+</body>
+</html>
