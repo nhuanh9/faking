@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+onmouseout, onmouseover, onclick, onchange
+
+<p onmouseover="bamVao()" id="chu" onmouseout="veMauDen()" onclick="toRa()">Bấm vào đây!</p>
+<input type="text" id="odulieu" onchange="dangNhapDuLieu()">
+<button type="button" onclick="dangNhapDuLieu()">Ấn</button>
+<script>
+    function bamVao() {
+        document.getElementById('chu').style.color = "yellow";
+    }
+
+    function veMauDen() {
+        document.getElementById('chu').style.color = "black";
+    }
+
+    function toRa() {
+        document.getElementById('chu').style.fontSize = "100px";
+    }
+
+    function dangNhapDuLieu() {
+        document.getElementById('chu').innerHTML = document.getElementById('odulieu').value
+    }
+
+
+</script>
+</body>
+</html>
