@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .o1 {
+            background: black;
+        }
+
+        .o0 {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+<script>
+    let str = "<table border='1'>";
+    for (let i = 1; i <= 8; i++) {
+        str += '<tr>';
+        for (let j = 1; j <= 8; j++) {
+            str += "<td width='50' height='50' class='o" + (i + j) % 2 + "' ></td>"
+        }
+        str += '</tr>';
+    }
+    str += "</table>"
+    document.write(str);
+
+    // let str = "<table border='1'>";
+    // for (let i = 1; i <= 8; i++) {
+    //     str += '<tr>';
+    //     for (let j = 1; j <= 8; j++) {
+    //         if ((i+j)%2 ) {
+    //             str += "<td width='50' height='50' style='background: white'></td>"
+    //         } else  {
+    //             str += "<td width='50' height='50' style='background: black'></td>"
+    //         }
+    //     }
+    //     str += '</tr>';
+    // }
+    // str += "</table>"
+    // document.write(str);
+</script>
+</body>
+</html>
