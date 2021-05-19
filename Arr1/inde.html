@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let day = [];
+    let sl = +prompt("Nhập vào số lượng phần tử: ");
+    for (let i = 0; i < sl; i++) {
+        day[i] = +prompt("Nhập vào phần tử thứ " + i);
+    }
+
+    // var tong = 0;
+    // var dem = 0;
+    // for (let i = 0; i < day.length; i++) {
+    //     if (day[i] % 2 != 0) {
+    //         continue;
+    //     }
+    //     tong += day[i];
+    //     dem++;
+    //     document.write(day[i] + " ");
+    // }
+    // document.write("Tổng: " + tong);
+    // document.write(" Số lượng: " + dem);
+    // document.write(" TBC: " + tong/dem);
+
+    let max = day[0];
+    let viTriMax = 0;
+    for (let i = 1; i < day.length; i++) {
+        if (max < day[i]) {
+            max = day[i];
+            viTriMax = i;
+        }
+    }
+    document.write("Số lớn nhất mảng là: " + max);
+    document.write("Max tại vị trí: " + viTriMax);
+
+    // for (let i = 1; i < day.length; i++) {
+    //     if (max == day[i]) {
+    //         document.write("Max tại vị trí: "+i);
+    //     }
+    // }
+</script>
+</body>
+</html>
