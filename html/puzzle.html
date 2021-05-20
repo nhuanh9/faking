@@ -5,23 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-<form>
-    <input type="checkbox" id="good" onclick="check('cheap','fast')">Good
-    <br>
-    <input type="checkbox" id="cheap" onclick="check('good','fast')">Cheap
-    <br>
-    <input type="checkbox" id="fast" onclick="check('good','cheap')">Fast
-</form>
+
+<img src="../images/1.jpeg" height="2048" width="1536" id="img"/>
+<button onclick="change()">C</button>
 <script>
-    function check(a,b) {
-        if (document.getElementById(a).checked==true && document.getElementById(b).checked==true) {
-            value = Math.round(Math.random());
-            if (value == 0) {
-                document.getElementById(a).checked =false;
-            } else {
-                document.getElementById(b).checked =false;
-            }
+    let i = 0;
+
+    function change() {
+        if (i % 2) {
+
+            document.getElementById('img').src = '../images/2.jpeg';
+        } else {
+
+            document.getElementById('img').src = '../images/1.jpeg';
         }
+        i++;
     }
 </script>
 </body>
