@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhapVao">
+<button onclick="timMaxInPut()">Ấn vào để tính</button>
+<script>
+    // function tinhTong2So(a, b) {
+    //     let dauRa = 0;
+    //     dauRa = a + b;
+    //     document.write(a + b)
+    // }
+    //
+    // tinhTong2So(2, 3);
+
+    function timMaxMang(arr) {
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    // let xx = [1, 2, 3, 4, 2, 1, 3, 1, 2, 1, 2];
+    // let yy = [1, 2, 93, 84, 22, 1, 5, 1, 62, 1, 2];
+    // alert(timMaxManr(xx));
+    // alert(timMaxManr(yy));
+
+    function timMaxInPut() {
+        let val = document.getElementById('nhapVao').value;
+        let arr = val.split(' ');
+        alert(timMaxMang(arr));
+    }
+</script>
+</body>
+</html>
