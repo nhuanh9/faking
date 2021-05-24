@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<script>
+    function F(a) {
+        let number = 0
+        if (a >= 2) {
+            var count = 0;
+            for (var i = 1; i <= a; i++) {
+                if (a % i == 0) count++;
+            }
+            if (count == 2) number = 1;
+        }
+        return number;
+    }
+    if (F(1) ==0 ){
+        alert("Không phải snt")
+    } else {
+        alert("Là số nguyên tố")
+    }
+</script>
+</body>
+</html>
